@@ -9,7 +9,6 @@ class Professeurs extends Etudiants implements interfaceProfesseurs{
     function __construct($prenom,$nom,$date_naissance,$matricule,$salaire,$specialite,$voiture){
         parent:: __construct($prenom,$nom,$date_naissance,$matricule);
         $this->setSpecialite($specialite);
-        $this->setSpecialite($specialite);
         $this->setVoiture($voiture);
         $this->setSalaire($salaire);
     }
