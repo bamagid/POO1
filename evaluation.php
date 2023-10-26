@@ -47,5 +47,3 @@ class Evaluations {
     }
         
 }
-$evaluation1=new Evaluations("Benji Ndiaye","La programmation en poo partie",4,"24-12-2023");
-$evaluation1->detailsEvaluation();
