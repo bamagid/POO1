@@ -1,8 +1,8 @@
 <?php
-interface interfaceObligatoire{
-    public function obligatoire();
+interface interfaceProfesseurs{
+    function evaluerEtudiant($date);
 }
-class Professeurs extends Etudiants implements interfaceObligatoire{
+class Professeurs extends Etudiants implements interfaceProfesseurs{
     private $salaire;
     private $specialite;
     private $voiture;
@@ -22,8 +22,7 @@ class Professeurs extends Etudiants implements interfaceObligatoire{
             return $this->salaire;
             } else{
                 throw new Exception ("Le salaire ne peut contenir que des chiffres");
-                }
-                }
+                }}
                 function setSpecialite($specialite) {
                     if(preg_match("/[A-Za-z -]{5,200}/",$specialite)){
                     $this->specialite=$specialite;
